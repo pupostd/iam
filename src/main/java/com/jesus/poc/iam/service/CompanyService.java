@@ -20,4 +20,8 @@ public class CompanyService {
                 new Company(name, description, active)
         );
     }
+
+    public Iterable<Company> lookup() {
+        return companyRepository.findAll();
+    }
 }

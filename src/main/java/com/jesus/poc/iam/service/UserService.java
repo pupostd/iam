@@ -22,4 +22,8 @@ public class UserService {
                 new User(firstName, middleName, lastName, dateOfBirth, sex, active)
         );
     }
+
+    public Iterable<User> lookup() {
+        return userRepository.findAll();
+    }
 }
